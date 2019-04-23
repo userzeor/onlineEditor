@@ -1,4 +1,5 @@
 /* jslint white: true, devel: true, onelet: true, browser: true, undef: true, nomen: true, regexp: true, plusplus: false, bitwise: true, newcap: true, maxerr: 50, indent: 4 */
+/* eslint-disable */
 let jsl = typeof jsl === 'undefined' ? {} : jsl
 
 /**

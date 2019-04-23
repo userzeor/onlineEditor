@@ -1,6 +1,6 @@
 # online-editor
 
-> A Vue.js project
+> 在线demo地址： https://userzeor.github.io/onlineEditor/#/
 
 ####CodeMirror初始化编译器时可设置属性
 

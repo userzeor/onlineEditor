@@ -1,0 +1,34 @@
+{  
+  "name": "变态脚本",  
+  "manifest_version": 2,  
+  "version": "1.0",  
+  "description": "来自次元化",
+  "icons": {
+    "128": "images/logo128x128.png",
+    "64": "images/logo64x64.png",
+    "48": "images/logo48x48.png",
+    "32": "images/logo32x32.png",
+    "16": "images/logo16x16.png"
+  },  
+  "author": "userzero",
+  "browser_action": {  
+    "default_icon": "logo1.png",
+    // "default_popup":"index.html",
+    "default_title":"爆炸了"    
+  },  
+  "permissions": [  
+      "tabs", "http://*/*","https://*/*"  
+  ],
+  "background":{
+      // "page":"background.html", //page和scripts只能设置一个   
+      "persistent": false ,  
+      //scripts定义一个脚本文件的数组，chrome会在扩展启动时自动创建一个包含所有指定脚本的页面
+      "scripts": ["background.js"]
+  },  
+  "content_scripts": [    
+   {    
+      "matches": ["<all_urls>"],    
+      "js": ["background.js"]    
+   }    
+  ]    
+}  
